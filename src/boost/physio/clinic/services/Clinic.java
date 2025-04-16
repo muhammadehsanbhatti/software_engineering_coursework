@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author ehsan
+ * @author ahsan
  */
 public class Clinic {
     private List<Patient> patients;
@@ -46,4 +46,47 @@ public class Clinic {
         }
         return results;
     }
+
+    public List<Patient> getPatients() {
+        return patients;
+    }
+
+    public void setPatients(List<Patient> patients) {
+        this.patients = patients;
+    }
+
+    public List<Physiotherapist> getPhysiotherapists() {
+        return physiotherapists;
+    }
+
+    public void setPhysiotherapists(List<Physiotherapist> physiotherapists) {
+        this.physiotherapists = physiotherapists;
+    }
+    
+    public List<Physiotherapist> findPhysiotherapistsByExpertise(String expertise) {
+    List<Physiotherapist> matchingPhysios = new ArrayList<>();
+    for (Physiotherapist physio : physiotherapists) {
+        if (physio.getExpertise().equalsIgnoreCase(expertise)) {
+            matchingPhysios.add(physio);
+        }
+    }
+    return matchingPhysios;
+}
+    public Physiotherapist findPhysiotherapistByName(String name) {
+    for (Physiotherapist physio : physiotherapists) {
+        if (physio.getName().equalsIgnoreCase(name)) {
+            return physio;
+        }
+    }
+    return null; // not found
+}
+    
+    public Patient findPatientById(int id) {
+    for (Patient patient : patients) {
+        if (patient.getId() == id) {
+            return patient;
+        }
+    }
+    return null; // Not found
+}
 }

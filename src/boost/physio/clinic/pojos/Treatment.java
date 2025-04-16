@@ -6,7 +6,7 @@ package boost.physio.clinic.pojos;
 
 /**
  *
- * @author ehsan
+ * @author ahsan
  */
 public class Treatment {
     private String name;
@@ -30,4 +30,17 @@ public class Treatment {
     public Physiotherapist getPhysiotherapist() {
         return physiotherapist;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPhysiotherapist(Physiotherapist physiotherapist) {
+        this.physiotherapist = physiotherapist;
+    }
+
+    public void setTimeSlot(String timeSlot) {
+        this.timeSlot = timeSlot;
+    }
+    
 }

@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  *
- * @author ehsan
+ * @author ahsan
  */
 public class Physiotherapist {
   private int id;
@@ -36,4 +36,21 @@ public class Physiotherapist {
     public String getExpertise() {
         return expertise;
     }  
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    
 }

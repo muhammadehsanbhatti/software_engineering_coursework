@@ -6,7 +6,7 @@ package boost.physio.clinic.pojos;
 
 /**
  *
- * @author ehsan
+ * @author ahsan
  */
 import java.util.ArrayList;
 import java.util.List;
@@ -41,5 +41,30 @@ public class Patient {
     public String getName() {
         return name;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    
 }
 

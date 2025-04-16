@@ -14,16 +14,19 @@ import java.util.Map;
 
 /**
  *
- * @author ehsan
+ * @author ahsan
  */
 public class ReportGenerator {
-    public static void generateAppointmentsReport(List<Patient> patients) {
-        System.out.println("\n---- Appointments Report ----");
+    public static String generateAppointmentsReport(List<Patient> patients) {
+        String report = "\n---- Appointments Report ----|n";
+        
         for (Patient patient : patients) {
             for (Appointment appointment : patient.getAppointments()) {
-                System.out.println(appointment.getDetails());
+                report = report + appointment.getDetails();
+                
             }
         }
+        return report;
     }
 
     public static void generatePhysiotherapistRanking(List<Physiotherapist> physiotherapists, List<Patient> patients) {
