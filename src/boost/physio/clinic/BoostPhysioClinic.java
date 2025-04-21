@@ -17,7 +17,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author ahsan
+ * @author ehsan
  */
 public class BoostPhysioClinic {
 

@@ -14,7 +14,7 @@ import java.util.Map;
 
 /**
  *
- * @author ahsan
+ * @author ehsan
  */
 public class ReportGenerator {
     public static String generateAppointmentsReport(List<Patient> patients) {

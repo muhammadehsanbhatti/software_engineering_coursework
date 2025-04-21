@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  *
- * @author ahsan
+ * @author ehsan
  */
 public class Clinic {
     private List<Patient> patients;

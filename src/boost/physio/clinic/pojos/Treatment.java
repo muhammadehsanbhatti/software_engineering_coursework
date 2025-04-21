@@ -6,7 +6,7 @@ package boost.physio.clinic.pojos;
 
 /**
  *
- * @author ahsan
+ * @author ehsan
  */
 public class Treatment {
     private String name;

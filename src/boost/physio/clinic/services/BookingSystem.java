@@ -13,7 +13,7 @@ import boost.physio.clinic.pojos.Treatment;
 
 /**
  *
- * @author ahsan
+ * @author ehsan
  */
 public class BookingSystem {
     private Clinic clinic;

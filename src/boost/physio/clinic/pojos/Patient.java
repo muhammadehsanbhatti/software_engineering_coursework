@@ -6,7 +6,7 @@ package boost.physio.clinic.pojos;
 
 /**
  *
- * @author ahsan
+ * @author ehsan
  */
 import java.util.ArrayList;
 import java.util.List;
