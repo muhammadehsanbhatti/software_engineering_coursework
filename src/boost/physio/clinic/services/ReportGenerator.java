@@ -44,7 +44,7 @@ public class ReportGenerator {
         List<Map.Entry<String, Integer>> sortedRanking = new ArrayList<>(ranking.entrySet());
         sortedRanking.sort((a, b) -> b.getValue().compareTo(a.getValue()));
 
-        System.out.println("\n---- Physiotherapist Rankings ----");
+        System.out.println("\n---- Physiotherapists Rankings ----");
         for (Map.Entry<String, Integer> entry : sortedRanking) {
             System.out.println(entry.getKey() + " - Attended Appointments: " + entry.getValue());
         }

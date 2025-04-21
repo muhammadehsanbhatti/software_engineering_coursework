@@ -30,7 +30,7 @@ public class Patient {
         appointments.add(appointment);
     }
 
-    public void removeAppointment(Appointment appointment) {
+    public void removeAppintment(Appointment appointment) {
         appointments.remove(appointment);
     }
 
