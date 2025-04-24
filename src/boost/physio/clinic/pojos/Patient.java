@@ -65,6 +65,12 @@ public class Patient {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    @Override
+    public String toString() {
+        return "Patient{" + "id=" + id + ", name=" + name + ", address=" + address + ", phone=" + phone + ", appointments=" + appointments + '}';
+    }
+    
     
 }
 

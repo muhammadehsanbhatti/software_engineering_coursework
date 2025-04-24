@@ -38,7 +38,9 @@ public class BoostPhysioClinic {
             System.out.println("3. Book Appointment by Expertise");
             System.out.println("4. Book Appointment by Physiotherapist Name");
             System.out.println("5. Cancel Appointment");
-            System.out.println("6. Generate Report");
+            System.out.println("6. All Patient");
+            System.out.println("7. All Physiotherapist");
+            System.out.println("8. Generate Report");
             System.out.println("0. Exit");
             System.out.print("Choose an option: ");
             int choice = Integer.parseInt(scanner.nextLine());
@@ -49,7 +51,9 @@ public class BoostPhysioClinic {
                 case 3 -> bookByExpertise();
                 case 4 -> bookByPhysiotherapistName();
                 case 5 -> cancelAppointment();
-                case 6 -> generateReport();
+                case 6 -> showAllPatients();
+                case 7 -> showAllPhysiotherapist();
+                case 8 -> generateReport();
                 case 0 -> {
                     System.out.println("Exiting system.");
                     return;
@@ -58,7 +62,23 @@ public class BoostPhysioClinic {
             }
         }
     }
+    
+    private static void showAllPatients()
+    {
+        for(Patient patient : clinic.getPatients())
+        {
+            System.out.println(patient.toString());
+        }
+        
+    }
 
+    private static void showAllPhysiotherapist()
+    {
+        for(Physiotherapist physio : clinic.getPhysiotherapists())
+        {
+            System.out.println(physio.toString());
+        }
+    }
     private static void initializeDummyData() {
         Physiotherapist physio1 = new Physiotherapist(1, "Dr. Smith", "123456789", "Massage",
                 List.of(new Treatment("Massage", null, "10:00 AM")));
@@ -196,7 +216,8 @@ public class BoostPhysioClinic {
 
     private static void generateReport() {
         List<Patient> patients = clinic.getPatients();
-        ReportGenerator.generateAppointmentsReport(patients);
+        String report = ReportGenerator.generateAppointmentsReport(patients);
+        System.out.print(report);
     }
     
 }

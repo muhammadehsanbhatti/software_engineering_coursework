@@ -18,7 +18,7 @@ import java.util.Map;
  */
 public class ReportGenerator {
     public static String generateAppointmentsReport(List<Patient> patients) {
-        String report = "\n---- Appointments Report ----|n";
+        String report = "\n---- Appointments Report ----\n";
         
         for (Patient patient : patients) {
             for (Appointment appointment : patient.getAppointments()) {
@@ -44,7 +44,7 @@ public class ReportGenerator {
         List<Map.Entry<String, Integer>> sortedRanking = new ArrayList<>(ranking.entrySet());
         sortedRanking.sort((a, b) -> b.getValue().compareTo(a.getValue()));
 
-        System.out.println("\n---- Physiotherapists Rankings ----");
+        System.out.println("\n---- Physiotherapist Rankings ----");
         for (Map.Entry<String, Integer> entry : sortedRanking) {
             System.out.println(entry.getKey() + " - Attended Appointments: " + entry.getValue());
         }

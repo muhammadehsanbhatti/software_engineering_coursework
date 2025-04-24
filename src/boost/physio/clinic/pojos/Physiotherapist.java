@@ -52,5 +52,11 @@ public class Physiotherapist {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    @Override
+    public String toString() {
+        return "Physiotherapist{" + "id=" + id + ", name=" + name + ", phone=" + phone + ", expertise=" + expertise + ", treatments=" + treatments + '}';
+    }
+    
     
 }

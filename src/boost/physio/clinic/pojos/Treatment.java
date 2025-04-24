@@ -42,5 +42,11 @@ public class Treatment {
     public void setTimeSlot(String timeSlot) {
         this.timeSlot = timeSlot;
     }
+
+    @Override
+    public String toString() {
+        return "Treatment{" + "name=" + name + ", physiotherapist=" + physiotherapist + ", timeSlot=" + timeSlot + '}';
+    }
+    
     
 }
