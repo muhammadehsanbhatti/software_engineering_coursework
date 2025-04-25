@@ -80,15 +80,37 @@ public class BoostPhysioClinic {
         }
     }
     private static void initializeDummyData() {
-        Physiotherapist physio1 = new Physiotherapist(1, "Dr. Smith", "123456789", "Massage",
-                List.of(new Treatment("Massage", null, "10:00 AM")));
+        Physiotherapist physio1 = new Physiotherapist(1, "Dr. Smith", "123456789", "Surgery",
+                List.of(new Treatment("Surgery", null, "10:00 AM")));
         Physiotherapist physio2 = new Physiotherapist(2, "Dr. Brown", "987654321", "Rehabilitation",
                 List.of(new Treatment("Rehabilitation", null, "2:00 PM")));
+        Physiotherapist physio3 = new Physiotherapist(3, "Dr. Devil", "125678945", "Medicine",
+                List.of(new Treatment("Medicine", null, "10:30 AM")));
         clinic.addPhysiotherapist(physio1);
         clinic.addPhysiotherapist(physio2);
+        clinic.addPhysiotherapist(physio3);
 
-        Patient patient1 = new Patient(1, "John Doe", "New York", "111222333");
+        Patient patient1 = new Patient(1, "Muhammad", "New York", "111222333");
+        Patient patient2 = new Patient(2, "Danish", "New York", "444555666");
+        Patient patient3 = new Patient(3, "Sharukh", "New York", "777888999");
+        Patient patient4 = new Patient(4, "Usman", "New York", "111333222");
+        Patient patient5 = new Patient(5, "Atif", "New York", "555666333");
+        Patient patient6 = new Patient(6, "Talat", "New York", "777888555");
+        Patient patient7 = new Patient(7, "Raffique", "New York", "9998888000");
+        Patient patient8 = new Patient(8, "Zain", "New York", "111222555");
+        Patient patient9 = new Patient(9, "Ansar", "New York", "100999888");
+        Patient patient10 = new Patient(10, "John", "New York", "555888222");
         clinic.addPatient(patient1);
+        clinic.addPatient(patient2);
+        clinic.addPatient(patient3);
+        clinic.addPatient(patient4);
+        clinic.addPatient(patient5);
+        clinic.addPatient(patient6);
+        clinic.addPatient(patient7);
+        clinic.addPatient(patient8);
+        clinic.addPatient(patient9);
+        clinic.addPatient(patient10);
+        
     }
 
     private static void addPatient() {
